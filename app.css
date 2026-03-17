@@ -1,6 +1,7 @@
 html {
     font-size: 16px;
 }
+
 .head {
     display: flex;
     height: 5rem;
@@ -22,7 +23,7 @@ html {
     align-items: center;
 }
 
-.nav > a {
+.nav>a {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 400;
     font-style: Regular;
@@ -32,6 +33,10 @@ html {
     text-transform: uppercase;
     text-decoration: none;
     color: rgba(39, 42, 51, 1);
+}
+
+.nav>a:hover {
+    color: rgba(238, 117, 62, 1);
 }
 
 .nav {
@@ -60,7 +65,7 @@ html {
     height: 50rem;
     width: 100%;
     margin: auto;
-    
+
 
 }
 
@@ -81,6 +86,7 @@ html {
 
 .special-offers_card-description {
     display: flex;
+    align-items: center;
 }
 
 .special-offers_card-image {
@@ -90,13 +96,15 @@ html {
 .special-offers_card-img {
     width: auto;
     height: auto;
-    display: block;
     object-fit: contain;
 }
 
 .special-offers_card-description-text {
-    align-items: center;
+    height: auto;
     padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 31px;
+    margin-bottom: 31px;
 
 }
 
@@ -106,12 +114,42 @@ html {
     font-style: normal;
     font-size: 18px;
     line-height: 120%;
-    padding: 31px 30px 0 0;
+    margin: auto;
 
 }
+
 .special-offers_card-status {
-
+    display: flex;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 145%;
+    color: #272A33;
+    gap: 10px;
 }
 
+.special-offers_card-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 30px 12px;
+    gap: 10px;
+    width: 159px;
+    height: 46px;
+    background: #272A33;
+    border-radius: 8px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 145%;
+    color: #FFFFFF;
+}
 
+.special-offers_card-button:hover {
+    background: #EE753E;
+    border: none;
+    cursor: pointer;
 
+}
